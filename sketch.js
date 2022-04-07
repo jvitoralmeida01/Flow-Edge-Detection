@@ -57,7 +57,6 @@ function draw() {
   noStroke();
   if(count < 100){
     linhazinha();
-    console.log(count);
     count ++;
   }
 }
