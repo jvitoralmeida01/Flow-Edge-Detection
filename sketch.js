@@ -1,4 +1,6 @@
 var points = [];
+let count = 0;
+let saved = false;
 var mult;
 
 let r;
@@ -22,7 +24,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(image.width, image.height);
+  var canvas = createCanvas(image.width, image.height);
+  canvas.parent('canvasHTML');
   background(25);
   angleMode(DEGREES);
   noiseDetail(1);
@@ -46,11 +49,17 @@ function setup() {
       points.push(p);
     }
   }
+
+  initial_points_length = points.length;
 }
 
 function draw() {
   noStroke();
-  linhazinha();
+  if(count < 100){
+    linhazinha();
+    console.log(count);
+    count ++;
+  }
 }
 
 function linhazinha() {

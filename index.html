@@ -14,5 +14,54 @@
 
   <body>
     <script src="sketch.js"></script>
+    <style>
+      body, html {
+        height: 100%;
+        background-image: url("assets/image.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .frame {
+        width: 100%;
+        margin: auto;
+        height: 150%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn{
+        background-color: #770044;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 3rem;
+        transition: 0.5s;
+      }
+      .btn:hover{
+        box-shadow: 0 0 1em #ff00ff;
+      }
+      #canvasHTML {
+        border: 1rem solid #220022;
+        border-radius: 1rem;
+      }
+    </style>
+    <div class="frame">
+      <div>
+        <button class="btn" onclick="saveCanvas('result', 'jpg')">Save</button>
+        <button class="btn" onclick="">Upload</button>
+      </div>
+      <div id="canvasHTML"></div>
+    </div>
   </body>
 </html>
