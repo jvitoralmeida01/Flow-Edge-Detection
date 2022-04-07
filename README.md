@@ -1,7 +1,7 @@
 # Flow-Edge-Detection
 
 ## Description
-A graphics project to simulate lines flowing and forming user input images with simple per-pixel edge detection. This Project uses p5.js to generate the output image inside an html canvas. You **do not** need to add p5 to this poject, all the p5 necessary files are inside "library/";
+A graphics project to simulate lines flowing and forming user input images with simple per-pixel edge detection. This Project uses p5.js to generate the output image inside a html canvas. You **do not** need to add p5 to this poject, all the necessary p5 files are inside "libraries/";
 
 ## Here's how it works
 ### Choose your image
