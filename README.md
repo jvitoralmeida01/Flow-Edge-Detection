@@ -1,2 +1,2 @@
-# flow-lines
-A graphic processing project to simulate lines flowing
+# Flow-Edge-Detection
+A graphics project to simulate lines flowing and forming user input images with simple per-pixel edge detection
